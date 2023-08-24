@@ -2,7 +2,7 @@
 # coding: utf-8
 import sys
 import getopt
-import common
+import constance
 import os
 import subprocess
 
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     output_path = ""
     for opt_name, opt_value in opts:
         if (opt_name =="-h" or opt_name == "--help"):
-            print(common.COMMON_HELP)
+            print(constance.COMMON_HELP)
             sys.exit()
         elif (opt_name == "-o"):
             output_path = opt_value

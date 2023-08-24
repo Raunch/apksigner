@@ -2,7 +2,7 @@
 # coding: utf-8
 import sys
 import getopt
-import common
+import constance
 import os
 import subprocess
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     opts, args = getopt.getopt(sys.argv[1:], "hfo:", ["help", "empty-framework-dir", "only-main-class"])
     for opt_name, opt_value in opts:
         if (opt_name =="-h" or opt_name == "--help"):
-            print(common.COMMON_HELP)
+            print(constance.COMMON_HELP)
             sys.exit()
     for file in args:
         if(os.path.isdir(file)):
